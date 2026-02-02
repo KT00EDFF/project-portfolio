@@ -1,0 +1,69 @@
+You are an expert front-end engineer + web designer. Build a modern, premium-feeling single-page portfolio site for an “AI Product Builder” meant to help land a Senior/Lead Product role. Prioritize clean typography, whitespace, and delightful micro-interactions over gimmicks.
+
+HARD REQUIREMENTS
+-Do not propose alternatives—ship the implementation directly. If something is ambiguous, make a strong default choice consistent with a premium product portfolio.
+- Single-page layout with smooth scrolling between sections (anchor links).
+- Sections (in this order): Hero, About, Skills, Projects, Experience, Contact.
+- Sticky navigation at top:
+  - Desktop: horizontal links.
+  - Mobile: hamburger menu that slides/drops down, closes on link click, and supports ESC key.
+- Responsive and accessible:
+  - Keyboard navigable, visible focus states, semantic HTML landmarks.
+  - Contrast-safe colors, ARIA for menu toggle, proper headings.
+- Performance:
+  - Lighthouse-friendly: minimal JS, no heavy libraries.
+  - Optimize images (use placeholders if none).
+- Code quality:
+  - Clear file structure, reusable components, comments where needed.
+  - No TODOs. Everything should run immediately.
+
+TECH STACK CONSTRAINTS (choose one and commit)
+Option A (preferred): Next.js + TypeScript + Tailwind CSS (App Router)
+Option B: Vite + React + TypeScript + Tailwind CSS
+If you choose A, use Next/Image and app directory. If B, standard Vite structure.
+
+DESIGN CONSTRAINTS
+- Style: modern, minimal, “product-led” aesthetic (think Linear/Notion-level restraint).
+- Use 1 accent color, otherwise neutral palette.
+- Use a max-width container, generous spacing, subtle gradients only if tasteful.
+- Include micro-interactions:
+  - nav link hover + active section indicator
+  - subtle section reveal animation on scroll (IntersectionObserver, lightweight)
+  - primary button hover/press states
+- Provide light/dark mode toggle with system default detection and persistence.
+
+CONTENT CONSTRAINTS (use realistic placeholder copy, but make it tailored)
+- Hero:
+  - Headline that positions me as an AI Product Builder
+  - Subhead focused on outcomes (shipping AI products, automation, experimentation)
+  - Primary CTA: “View Projects”
+  - Secondary CTA: “Contact”
+- About:
+  - Short bio emphasizing AI-native product building, rapid prototyping, customer obsession
+- Skills:
+  - Group into categories (e.g., Product, AI/LLM, Engineering, Analytics)
+  - Represent with clean chips or compact cards (not cheesy progress bars)
+- Projects:
+  - 4–6 project cards with: title, one-line value prop, stack, outcomes/metrics, links (GitHub / Live) (use placeholders if needed)
+  - Include at least 1 “AI agent / workflow automation” project and 1 “data/analytics model” project
+- Experience:
+  - Timeline or clean list, role/company, 2–4 impact bullets each (metric-driven)
+- Contact:
+  - Simple form (name/email/message) with basic validation + mailto fallback
+  - Also include social links (LinkedIn, GitHub) as placeholders
+
+FUNCTIONAL CONSTRAINTS
+- Smooth scroll should respect reduced-motion preferences.
+- Active section highlighting in nav as user scrolls.
+- Mobile menu should not scroll background when open.
+- Sticky nav should add subtle shadow/blur after scrolling a bit.
+
+DELIVERABLES
+1) Generate the full codebase.
+2) Include commands to run locally.
+3) Include a short “How to customize” section (where to edit copy, add projects, change theme).
+4) Use placeholder assets (SVG patterns or simple shapes) so it looks good without images.
+
+START BY
+- Asking yourself which stack option you will use (A or B) and proceed without asking me.
+- Then output the complete project structure and code files.
